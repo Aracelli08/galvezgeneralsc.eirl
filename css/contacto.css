@@ -1,0 +1,175 @@
+.contenedor-info{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.contenedor-info .titulo h2{
+    width: 59;
+    font-size:50px ;
+    color: #fff;
+    font-weight: 200;
+    font-weight: 200;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/*INFORMACIÓN DE CONTACTO*/
+.contenedor-informacion{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image-about.us{
+    width: 48%;
+}
+
+.contenedor-informacion .contenido-texto{
+    width: 30%;
+}
+
+.contenido-texto h3{
+    margin-bottom: 15px;
+}
+
+.contenido-texto h3 span{
+    background: #f0a500;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    margin-right: 5px;
+}
+
+.contenido-texto p{
+    padding: 15px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+/*FOOTER*/
+.footer{
+    position: relative;
+    width: 100%;
+    height: 140vh;
+    background: url(../img/img_fondContacto.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer .deg-footer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.footer .ejeZfooter{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.footer .footer-content{
+    width: 100%;
+    padding-top: 100px;
+    margin: auto;
+}
+
+.footer .footer-content .footer-title{
+    width: 40%;
+    margin: auto;
+    border: 1px solid #fff;
+    padding: 15px;
+}
+
+.footer .footer-content .footer-title h2{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.footer .footer-content .footer-title hr{
+    width: 50%;
+    margin: auto;
+}
+
+.footer .footer-content .formulario-content{
+    width: 50%;
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid var(--orange);
+    margin: 40px auto;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+.footer .footer-content .formulario-content #Formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer .footer-content .formulario-content #Formulario label{
+    text-align: center;
+    color: var(--black);
+    font-size: 22px;
+    margin: 30px 0px 10px 0px;
+}
+
+.footer .footer-content .formulario-content #Formulario input{
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    border: 2px solid var(--orange);
+    border-radius: 24px;
+    outline: none;
+    text-align: center;
+    font-size: 17px;
+    color: var(--black);
+}
+
+.footer .footer-content .formulario-content #Formulario textarea{
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    border: 2px solid var(--orange);
+    border-radius: 24px;
+    outline: none;
+    font-size: 15px;
+    color: var(--black);
+    padding: 20px;
+}
+
+.footer .footer-content .formulario-content #Formulario .send{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+}
+
+.footer .footer-content .formulario-content #Formulario .send button{
+    width: 150px;
+    height: 40px;
+    background: var(--orange);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.footer .footer-content .formulario-content #Formulario .send button:hover{
+    background: var(--LightO);
+}
+/*FIN FOOTER*/

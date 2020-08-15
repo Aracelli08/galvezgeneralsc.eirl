@@ -1,0 +1,88 @@
+:root{
+    /*colores*/
+    --black:#000000;
+    --LightO: #f0a500;
+    --orange:#f77700;
+    --white:#ffffff;
+    --Grey: #969696;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.content-uno{
+    width: 100%;
+    margin-top: 100px;
+    margin: auto;
+    padding: 60px;
+}
+
+.content-uno .quienes-somos{
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+
+.content-uno .quienes-somos h1{
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    font-weight: 100;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content-uno .quienes-somos p{
+    text-align: center;
+    font-size: 18px;
+    color: var(--black);
+    font-weight: 100;
+    line-height: 38px;
+}
+
+
+/*MISIÓN Y VISIÓN*/
+/*IMAGENES*/
+.galeria{
+    width: 100%;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 10em;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 150px;
+}
+
+.item{
+    background-color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0,.095);
+
+    transition: all 500ms;
+}
+
+/*Mouse sobre imagen*/
+.item:hover{
+    transform: scale(1.05);
+}
+
+.item-text{
+    padding: 0.5em;
+}
+
+.item-img{
+    max-width: 99%;
+    display: block;
+}

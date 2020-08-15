@@ -1,0 +1,134 @@
+:root{
+    /*colores*/
+    --black:#000000;
+    --LightO: #f0a500;
+    --orange:#f77700;
+    --white:#ffffff;
+    --Grey: #969696;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*TITULO*/
+.lineas-negocio{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.contenedor-linNeg{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contenedor-linNeg h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*IMAGENES*/
+.galeria{
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.item{
+    background-color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0,.095);
+
+    transition: all 300ms;
+}
+
+/*Mouse sobre imagen*/
+.item:hover{
+    transform: scale(1.05);
+}
+
+.item-text{
+    padding: 1em;
+}
+
+.item-img{
+    max-width: 100%;
+    display: block;
+}
+
+/*FOOTER: PIE DE PAGINA*/
+footer{
+    background: #000000;
+    padding: 10px 0 30px 0;
+    margin: auto;
+    overflow: hidden;;
+}
+
+.redes-sociales{
+    text-align: center; 
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #969696;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 10px;
+    margin: 20px 0 0 0;
+    color: #969696
+}
+
+
+/*JQUERY: VISTA DE LA PÁGINA EN OTRO DISPOSITIVO*/
+@media only screen and (max-width: 773px){
+    /*IMG HEADER*/
+    .img-header .welcome h1{
+        font-size: 25px;
+    }
+
+    .img-header .welcome p{
+        color: rgb(255, 187, 124);
+        font-size: 15px;
+        padding: 5px;
+    }
+}
+
+/*COLUMNAS EN OTRO DISPOSITIVO*/
+@media screen and (min-width: 598px){
+    .contenedor-linNeg{
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media screen and (min-width: 960px){
+    .contenedor-linNeg{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
